@@ -1,0 +1,38 @@
+# ============================================================================
+# FraudShield AI - Docker Compose Configuration
+# ============================================================================
+# Easy deployment with docker-compose
+
+version: '3.8'
+
+services:
+  fraud-detection-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fraudshield-ai
+    ports:
+      - "8050:8050"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DASH_DEBUG=False
+    volumes:
+      - ./:/app
+    restart: unless-stopped
+    networks:
+      - fraud-detection-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+networks:
+  fraud-detection-network:
+    driver: bridge
+
+# Usage:
+# docker-compose up -d      # Start in background
+# docker-compose logs -f    # View logs
+# docker-compose down       # Stop containers
