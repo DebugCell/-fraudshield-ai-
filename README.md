@@ -250,18 +250,6 @@ docker run -p 8050:8050 fraud-detection-dashboard
 4. **Generate Predictions**: Real-time fraud scoring
 5. **Analyze**: View comprehensive dashboards
 6. **Export**: Download reports and insights
-
-## 🎓 Portfolio Value
-
-This project demonstrates:
-- ✅ Full-stack data science application development
-- ✅ Professional UI/UX design principles
-- ✅ Machine learning model implementation
-- ✅ Data visualization expertise
-- ✅ Production-ready code architecture
-- ✅ Enterprise application development
-- ✅ Risk analytics and financial domain knowledge
-
-Perfect for impressing recruiters, hiring managers, and clients!
+!
 
 
