@@ -264,24 +264,4 @@ This project demonstrates:
 
 Perfect for impressing recruiters, hiring managers, and clients!
 
-## 📝 License
-
-This project is open-source and available for educational and commercial use.
-
-## 💬 Support & Contributions
-
-For issues, suggestions, or contributions:
-1. Review the code structure in each module
-2. Modify `config.py` for styling changes
-3. Extend `utils.py` for additional ML features
-4. Add components in `components.py`
-
-## 👤 Author
-
-**FraudShield AI Development Team**
-Enterprise Credit Card Fraud Detection Platform
-2024
-
-
-Completed used by AI
 
